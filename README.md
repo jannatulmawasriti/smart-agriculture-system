@@ -804,3 +804,4 @@ The AI part uses a **two-stage approach**:
 **Stage 2:** If it is a leaf, identify the disease from the trained 31-class disease model.
 
 This makes the disease detection process more controlled and reduces incorrect predictions from non-leaf images.
+Dataset Link:https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
