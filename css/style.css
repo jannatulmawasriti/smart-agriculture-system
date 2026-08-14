@@ -1,0 +1,387 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: #f4f7f3;
+    color: #222;
+    line-height: 1.6;
+}
+
+a { text-decoration:none; color:inherit; }
+ul { list-style:none; }
+
+.navbar {
+    background: #2e7d32;
+    color:#fff;
+    padding: 12px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.nav-container {
+    max-width: 1100px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding: 0 20px;
+}
+.logo { font-size:1.3rem; font-weight:700; color:#fff; }
+.nav-links { display:flex; gap:16px; flex-wrap:wrap; }
+.nav-links li a {
+    color:#fff;
+    font-weight:500;
+    padding:6px 10px;
+    border-radius:6px;
+    transition:0.2s;
+}
+.nav-links li a:hover { background: rgba(255,255,255,0.2); }
+
+.main-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    min-height: 60vh;
+}
+
+.footer {
+    text-align:center;
+    background:#1b5e20;
+    color:#fff;
+    padding:15px;
+    margin-top:40px;
+}
+
+.card {
+    background:#fff;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+}
+
+.card-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+.stat-card {
+    background:#fff;
+    border-left:5px solid #2e7d32;
+    border-radius:8px;
+    padding:18px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+.stat-card h3 { font-size:1.8rem; color:#2e7d32; }
+.stat-card p { color:#555; margin-top:4px; }
+
+.hero {
+    text-align:center;
+    padding:50px 20px;
+    background: linear-gradient(135deg,#a5d6a7,#e8f5e9);
+    border-radius:12px;
+    margin-bottom:30px;
+}
+.hero h1 { font-size:2rem; color:#1b5e20; margin-bottom:10px; }
+.hero p { color:#33691e; font-size:1.1rem; }
+
+.feature-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap:20px;
+}
+.feature-card {
+    background:#fff;
+    text-align:center;
+    padding:25px 15px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    transition:0.2s;
+}
+.feature-card:hover { transform: translateY(-4px); }
+.feature-card .icon { font-size:2.2rem; margin-bottom:10px; }
+.feature-card h3 { color:#2e7d32; margin-bottom:8px; }
+.feature-card a.btn { margin-top:12px; }
+
+.form-box {
+    max-width:480px;
+    margin: 0 auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+.form-box h2 { text-align:center; margin-bottom:20px; color:#2e7d32; }
+.form-group { margin-bottom:16px; }
+.form-group label { display:block; margin-bottom:6px; font-weight:500; }
+.form-group input, .form-group select, .form-group textarea {
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-family:inherit;
+    font-size:1rem;
+}
+.form-group .voice-btn {
+    margin-left:6px;
+    background:#2e7d32;
+    color:#fff;
+    border:none;
+    border-radius:50%;
+    width:36px;
+    height:36px;
+    cursor:pointer;
+    font-size:1rem;
+}
+.input-with-voice { display:flex; gap:6px; align-items:center; }
+.input-with-voice input { flex:1; }
+
+.btn {
+    display:inline-block;
+    background:#2e7d32;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:1rem;
+    font-family:inherit;
+    transition:0.2s;
+}
+.btn:hover { background:#1b5e20; }
+.btn-danger { background:#c62828; }
+.btn-danger:hover { background:#8e0000; }
+.btn-small { padding:6px 12px; font-size:0.9rem; }
+.btn-secondary { background:#607d8b; }
+
+.alert { padding:12px 16px; border-radius:6px; margin-bottom:16px; }
+.alert-success { background:#dcedc8; color:#33691e; }
+.alert-error { background:#ffcdd2; color:#b71c1c; }
+
+table { width:100%; border-collapse:collapse; background:#fff; border-radius:8px; overflow:hidden; }
+table th, table td { padding:12px; border-bottom:1px solid #eee; text-align:left; }
+table th { background:#2e7d32; color:#fff; }
+table tr:hover { background:#f1f8f1; }
+
+.badge { padding:4px 10px; border-radius:20px; font-size:0.85rem; color:#fff; }
+.badge-Pending { background:#fb8c00; }
+.badge-Accepted { background:#1976d2; }
+.badge-Processing { background:#7b1fa2; }
+.badge-Delivered { background:#2e7d32; }
+.badge-Cancelled { background:#c62828; }
+
+.product-card { background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background: #f5f7f5;
+    padding: 10px;
+    display: block;
+}
+.product-card .info { padding:14px; }
+.product-card h4 { color:#1b5e20; margin-bottom:6px; }
+.product-card .price { color:#2e7d32; font-weight:700; margin:6px 0; }
+
+.search-bar { display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap; }
+.search-bar input, .search-bar select { padding:10px; border-radius:6px; border:1px solid #ccc; }
+.search-bar input { flex:1; min-width:200px; }
+
+.result-box { background:#fff; padding:25px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+.result-box h3 { color:#2e7d32; margin-bottom:15px; }
+.result-item { padding:10px 0; border-bottom:1px dashed #ddd; }
+
+/* ===================== লোকেশন ও ডেলিভারি ট্র্যাকিং ===================== */
+
+.location-btn {
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:#1565c0;
+    color:#fff;
+    border:none;
+    padding:9px 14px;
+    border-radius:6px;
+    cursor:pointer;
+    font-family:inherit;
+    font-size:0.92rem;
+    margin-top:6px;
+}
+.location-btn:hover { background:#0d47a1; }
+.location-btn:disabled { opacity:0.6; cursor:not-allowed; }
+.location-status { font-size:0.85rem; color:#555; margin-top:6px; min-height:18px; }
+
+.map-opt-in {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:0.88rem;
+    color:#333;
+    margin-top:10px;
+    cursor:pointer;
+    font-weight:500;
+}
+.map-opt-in input[type="checkbox"] { width:16px; height:16px; accent-color:#2e7d32; cursor:pointer; }
+.opt-in-hint { color:#999; font-weight:400; }
+.privacy-note {
+    font-size:0.8rem;
+    color:#5c6b5c;
+    background:#f1f7f1;
+    border:1px solid #dfe9df;
+    border-radius:8px;
+    padding:8px 12px;
+    margin:8px 0 4px;
+}
+
+.map-box {
+    width:100%;
+    height:280px;
+    border-radius:12px;
+    margin-top:14px;
+    border:1px solid #e3e8e3;
+    overflow:hidden;
+    display:none;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08);
+}
+.map-box.active { display:block; }
+.map-box .leaflet-popup-content-wrapper { border-radius:10px; }
+
+/* লাইভ ট্রাক মার্কার — নাড়ানো পালস রিং সহ */
+.live-truck-icon { position:relative; }
+.live-truck-emoji {
+    position:absolute; left:50%; top:50%;
+    transform:translate(-50%,-50%);
+    font-size:1.5rem;
+    filter:drop-shadow(0 2px 3px rgba(0,0,0,0.35));
+    z-index:2;
+}
+.live-truck-pulse {
+    position:absolute; left:50%; top:50%;
+    width:34px; height:34px;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+    background:rgba(21,101,192,0.35);
+    animation: truck-pulse 1.6s infinite;
+    z-index:1;
+}
+@keyframes truck-pulse {
+    0% { transform:translate(-50%,-50%) scale(0.6); opacity:0.9; }
+    70% { transform:translate(-50%,-50%) scale(1.8); opacity:0; }
+    100% { opacity:0; }
+}
+
+.tracking-btn {
+    background:#7b1fa2;
+}
+.tracking-btn:hover { background:#4a148c; }
+
+.live-badge {
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-size:0.8rem;
+    color:#2e7d32;
+    font-weight:600;
+    margin-left:8px;
+    background:#e8f5e9;
+    padding:3px 10px;
+    border-radius:20px;
+}
+.live-dot {
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    background:#2e7d32;
+    animation: pulse-dot 1.4s infinite;
+}
+@keyframes pulse-dot {
+    0% { box-shadow:0 0 0 0 rgba(46,125,50,0.5); }
+    70% { box-shadow:0 0 0 8px rgba(46,125,50,0); }
+    100% { box-shadow:0 0 0 0 rgba(46,125,50,0); }
+}
+
+.tracking-panel {
+    background:linear-gradient(180deg, #fbfdfb 0%, #ffffff 60%);
+    border-radius:14px;
+    box-shadow:0 4px 16px rgba(0,0,0,0.09);
+    border:1px solid #eef2ee;
+    padding:18px 20px 20px;
+    margin-top:10px;
+}
+.tracking-panel-head {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-bottom:12px;
+    margin-bottom:10px;
+    border-bottom:1px solid #eef1ee;
+}
+.tracking-panel-title { font-weight:700; color:#2e7d32; font-size:1rem; }
+.tracking-panel .updated-at { font-size:0.8rem; color:#8a8a8a; margin-top:8px; }
+
+/* বর্তমান অবস্থানের নাম — চিপ আকারে */
+.location-name-chip {
+    display:inline-block;
+    margin-top:12px;
+    font-size:0.86rem;
+    font-weight:600;
+    color:#0d47a1;
+    background:#e8f0fe;
+    border:1px solid #cfe0fc;
+    padding:7px 14px;
+    border-radius:20px;
+    max-width:100%;
+    overflow-wrap:anywhere;
+}
+
+/* স্ট্যাটাস স্টেপ — কানেক্টেড সার্কেল প্রোগ্রেস */
+.status-steps {
+    display:flex;
+    align-items:flex-start;
+    gap:0;
+    margin:6px 0 16px;
+}
+.status-step {
+    flex:1;
+    min-width:70px;
+    text-align:center;
+    position:relative;
+    font-size:0.76rem;
+    color:#aaa;
+}
+.status-step::before {
+    content:"";
+    position:absolute;
+    top:8px; left:-50%; width:100%; height:3px;
+    background:#e2e2e2;
+    z-index:0;
+}
+.status-step:first-child::before { display:none; }
+.status-step-dot {
+    display:block;
+    width:18px; height:18px;
+    margin:0 auto 6px;
+    border-radius:50%;
+    background:#fff;
+    border:3px solid #ddd;
+    position:relative;
+    z-index:1;
+    transition:all 0.25s ease;
+}
+.status-step-label { display:block; padding:0 2px; }
+.status-step.done { color:#2e7d32; font-weight:600; }
+.status-step.done .status-step-dot { background:#2e7d32; border-color:#2e7d32; }
+.status-step.done::before { background:#2e7d32; }
+.status-step.current { color:#1565c0; font-weight:700; }
+.status-step.current .status-step-dot {
+    background:#1565c0; border-color:#1565c0;
+    box-shadow:0 0 0 4px rgba(21,101,192,0.18);
+}
+
+@media (max-width:600px) {
+    .nav-links { gap:8px; }
+    .nav-links li a { padding:5px 8px; font-size:0.9rem; }
+    .map-box { height:220px; }
+    .status-step { font-size:0.68rem; min-width:54px; }
+    .tracking-panel { padding:14px; }
+}
