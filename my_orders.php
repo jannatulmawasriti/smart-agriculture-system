@@ -42,6 +42,9 @@ include "includes/header.php";
                 <?php else: ?>
                     <span style="color:#999; font-size:0.85rem;">বাতিল হয়েছে</span>
                 <?php endif; ?>
+                <?php if ($o['status'] === 'Pending'): ?>
+                    <a href="edit_order.php?id=<?php echo $o['id']; ?>" class="btn btn-small" style="background:#f9a825; margin-top:5px; display:inline-block;">✏️ এডিট</a>
+                <?php endif; ?>
             </td>
         </tr>
         <?php if ($o['status'] !== 'Cancelled'): ?>
